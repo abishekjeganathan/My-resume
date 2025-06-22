@@ -1,0 +1,168 @@
+\documentclass[letterpaper,10pt]{article}
+
+% Packages and settings
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{bookmark}
+\usepackage{lastpage}
+
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+
+\usepackage{xcolor}
+\definecolor{accentTitle}{HTML}{0e6e55}
+\definecolor{accentText}{HTML}{0e6e55}
+\definecolor{accentLine}{HTML}{a16f0b}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.5in}
+
+\setlength{\multicolsep}{0pt}
+\setlength{\columnsep}{30pt} % space between columns
+\setlength{\tabcolsep}{0pt}
+\setlength{\footskip}{3.7pt}
+\raggedbottom
+\raggedright
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\newcommand{\documentTitle}[2]{
+  \begin{center}
+    {\Huge\color{accentTitle} #1}\par
+    \vspace{10pt}
+    {\color{accentLine} \hrule}
+    \vspace{2pt}
+    \small{#2}\par
+    \vspace{2pt}
+    {\color{accentLine} \hrule}
+    \vspace{10pt}
+  \end{center}
+}
+
+\newcommand{\headingBf}[2]{
+  \vspace{5pt}\textbf{#1}\hfill\textbf{#2}\\
+}
+
+\newcommand{\headingIt}[2]{
+  \textit{#1}\hfill\textit{#2}\\
+}
+
+\newenvironment{resume_list}{
+  \vspace{-3pt}
+  \begin{itemize}[itemsep=2px, parsep=4pt, leftmargin=*]
+}{
+  \end{itemize}
+}
+
+\newcommand{\itemTitle}[1]{
+  \item[] \underline{#1}\vspace{4pt}
+}
+
+\renewcommand\labelitemi{$\bullet$}
+
+\newcommand{\tinysection}[1]{
+  \phantomsection
+  \addcontentsline{toc}{section}{#1}
+  {\large{\bfseries\color{accentText}#1}}
+
+  \vspace{10pt}
+}
+
+\begin{document}
+
+\documentTitle{Abishek Jeganathan}{
+  \faPhone\ 9488812061 \quad | \quad
+  \faEnvelope\ \href{mailto:abishekabd90@gmail.com}{abishekabd90@gmail.com} \quad | \quad
+  Karur, Tamil Nadu
+}
+
+\begin{center}
+    {\large \bfseries Java Developer}
+\end{center}
+
+
+
+\tinysection{Summary}
+Motivated, adaptable, and enthusiastic Java backend developer eager to learn, grow, and contribute to scalable applications. Passionate about embracing new coding challenges, strengthening technical skills, and adding value through code. A team-oriented person who aims to make a positive impact in a collaborative environment. Keen to explore modern Java frameworks, microservice architecture, and best practices to develop robust and efficient software solutions while delivering high performance and maintainability.
+
+
+{\color{accentLine}\rule{\linewidth}{0.5pt}}
+
+\vspace{10pt}
+
+\tinysection{Skills}
+
+\begin{tabular}{p{4cm} p{7cm} p{3cm} p{5cm}}
+
+\textbf{Backend} & Java, Spring Boot, Hibernate & \textbf{Design} & Monolithic, Microservice \\[4pt]
+
+\textbf{Web Services} & REST API & \textbf{Other} & JUnit, Mockito \\[4pt]
+
+\textbf{Database} & MySQL & \textbf{Framework} & Spring MVC \\[4pt]
+
+\textbf{Containerization} & Docker, Kubernetes & \textbf{Methodology} & Agile \\[4pt]
+
+\textbf{Tools} & AWS, Git, GitHub, Maven, Postman & \textbf{IDE} & IntelliJ, Eclipse \\
+
+\end{tabular}
+
+{\color{accentLine}\rule{\linewidth}{0.5pt}}
+
+\vspace{10pt}
+
+\tinysection{Experience}
+
+\headingBf{HC CORP, Chennai}{Jan 2023 -- Present}
+\headingIt{Java Developer (About 2 Years of Experience)}{}
+
+
+\headingBf{Project Name}{Attendance Management System}
+
+\begin{resume_list}
+  \item Designed and implemented a scalable Attendance Management System using Spring Boot and Spring Data JPA.
+  \item Handle User Module functionality, including adding, updating, retrieving, and validating employees efficiently.
+  \item Performed code reviews, debug issues promptly, and maintained functionality and application stability.
+  \item Prepared technical documents and integrated Spring Data JPA to connect Java entities with MySQL.
+  \item Built with Spring Boot, Spring Data JPA, MySQL, and JSP; designed to handle large amounts of data while preserving accuracy and ease of use.
+  \item Ensured clean code practices, proper Exception Handling, and a scalable architecture that can be easily extended in future.
+\end{resume_list}
+
+\headingBf{Roles and Responsibilities at Company}{}
+\begin{resume_list}
+  \item Develop back-end components following industry best practices, coding standards, and scalable architecture patterns.
+  \item Collaborate closely with cross-functional teams to resolve technical bottlenecks and implement new, business-critical features.
+  \item Write clear, reusable, and well-documented code; perform rigorous code reviews and debug promptly to maintain code quality.
+  \item Prepare technical documents, API specifications, and reports to aid future maintenance and knowledge transfer across the team.
+  \item Support delivery and operations by addressing production issues quickly and efficiently, ensuring smooth rollout and minimum service disruption.
+\end{resume_list}
+
+\tinysection{{\color{accentTitle}Education}}
+
+\headingBf{Higher Secondary (Class 12), Karur Vetri Vinayaka Matric Higher Secondary School, Karur}{Percentage: 73.41\%}
+
+
+\headingBf{Bachelor's Degree, Karpagam Academy of Higher Education, Coimbatore}{CGPA: 6.9}
+
+
+
+{\color{accentLine}\rule{\linewidth}{0.5pt}}
+
+
+\end{document}
+
