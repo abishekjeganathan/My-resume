@@ -129,7 +129,7 @@ Motivated, adaptable, and enthusiastic Java backend developer eager to learn, gr
 \tinysection{Experience}
 
 \headingBf{HC CORP, Chennai}{Oct 2023 -- Present}
-\headingIt{Java Developer (About 2 Years of Experience)}{}
+\headingIt{Java Developer ( 2+ Years of Experience)}{}
 
 
 \headingBf{Project Name}{StaySmart : Hospitality CRM and Booking Suite}
